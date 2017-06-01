@@ -4,12 +4,10 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-
-namespace ConsoleClient
+namespace ResourseOwnerClient
 {
-
-        public class Program
-        {
+    public class Program
+    {
         public static void Main(string[] args) => MainAsync().GetAwaiter().GetResult();
 
         private static async Task MainAsync()
@@ -18,8 +16,8 @@ namespace ConsoleClient
             var disco = await DiscoveryClient.GetAsync("http://localhost:5000");
 
             // request token
-            var tokenClient = new TokenClient(disco.TokenEndpoint, "client", "secret");
-            var tokenResponse = await tokenClient.RequestClientCredentialsAsync("api1");
+            var tokenClient = new TokenClient(disco.TokenEndpoint, "ro.client", "secret");
+            var tokenResponse = await tokenClient.RequestResourceOwnerPasswordAsync("alice", "password", "api1");
 
             if (tokenResponse.IsError)
             {
@@ -41,9 +39,9 @@ namespace ConsoleClient
             }
             else
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = response.Content.ReadAsStringAsync().Result;
                 Console.WriteLine(JArray.Parse(content));
             }
         }
     }
-    }
+}

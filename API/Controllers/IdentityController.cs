@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
-    [Route("controller")]
+    [Route("identity")]
     [Authorize]
     public class IdentityController : ControllerBase
     {
