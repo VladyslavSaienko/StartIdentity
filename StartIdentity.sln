@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourseOwnerClient", "Reso
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{3099744C-7A27-4171-A419-26F96A5578A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcClient", "MvcClient\MvcClient.csproj", "{3C4FE0CE-571D-4F03-AF96-D00C766D25BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{A1BF1199-1E59-4DD1-9BDB-7B09EE4C7C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1BF1199-1E59-4DD1-9BDB-7B09EE4C7C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1BF1199-1E59-4DD1-9BDB-7B09EE4C7C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4FE0CE-571D-4F03-AF96-D00C766D25BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4FE0CE-571D-4F03-AF96-D00C766D25BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4FE0CE-571D-4F03-AF96-D00C766D25BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4FE0CE-571D-4F03-AF96-D00C766D25BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D4B9B643-A826-4994-AF1F-31A7517FC19F} = {3099744C-7A27-4171-A419-26F96A5578A4}
 		{A1BF1199-1E59-4DD1-9BDB-7B09EE4C7C96} = {3099744C-7A27-4171-A419-26F96A5578A4}
+		{3C4FE0CE-571D-4F03-AF96-D00C766D25BF} = {3099744C-7A27-4171-A419-26F96A5578A4}
 	EndGlobalSection
 EndGlobal
